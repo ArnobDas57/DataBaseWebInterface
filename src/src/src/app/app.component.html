@@ -1,0 +1,33 @@
+<mat-toolbar color="primary">  
+  <span class="title">Phone Plan Manager</span>
+  <span class="example-spacer"></span>
+  <a routerLink="/"  mat-button>
+    Home
+  </a>
+  <a *ngIf="!authService.loggedIn()" routerLink="/customer"  mat-button>
+    Customers
+  </a>
+  <a *ngIf="!authService.loggedIn()" routerLink="/phone"  mat-button>
+    Phone
+  </a>
+  <a *ngIf="!authService.loggedIn()" routerLink="/plan"  mat-button>
+    Plan
+  </a>
+  <a *ngIf="!authService.loggedIn()" routerLink="/usage"  mat-button>
+    Usage
+  </a>
+  <a *ngIf="!authService.loggedIn()" routerLink="/addon"  mat-button>
+    AddOn
+  </a>
+  <a *ngIf="authService.loggedIn()" routerLink="/login"  mat-button>
+    Login
+  </a>
+  <a *ngIf="authService.loggedIn()" routerLink="/register"  mat-button>
+    Register
+  </a>
+  <a *ngIf="!authService.loggedIn()" (click)="logout()" mat-button>
+    Logout
+  </a>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

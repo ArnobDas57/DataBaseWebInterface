@@ -1,0 +1,32 @@
+{
+  "name": "se3309-assignment4-null",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hhehar4/se3309-assignment4-NULL.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hhehar4/se3309-assignment4-NULL/issues"
+  },
+  "homepage": "https://github.com/hhehar4/se3309-assignment4-NULL#readme",
+  "dependencies": {
+    "@auth0/angular-jwt": "^5.0.2",
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.2",
+    "mysql": "^2.18.1",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "validator": "^13.5.1"
+  }
+}

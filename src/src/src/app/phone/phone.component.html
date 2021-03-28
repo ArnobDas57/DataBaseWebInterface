@@ -1,0 +1,31 @@
+<div class="container">
+    <hr class="my-2">
+    <form (submit)="phoneSearch()">
+        <div class="row">
+            <div class="col">
+                <label>Get Total Amount of Minutes, Data and Messages Used According to Phone Model:</label>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" [(ngModel)]="model" name="model" placeholder="Enter Phone Model">
+            </div>
+            <div class="col">
+                <button type="submit" class="btn btn-dark">Search</button>
+            </div>
+        </div>
+    </form>
+    <hr class="my-2">
+  </div>
+
+  <div class='container'>
+    <ul class="list-group row">
+        <li class="list-group-item col-xs-6" *ngFor="let entry of mins; index as i;">
+            <div class="col-xs-6">
+                <p class="inner">Contract Number: {{entry.contractNumber}}</p>
+                <p class="inner">Phone Number: {{entry.phoneNum}}</p>
+                <p class="inner">Total Minutes Used: {{entry.minutesUsed}} Minutes</p>
+                <p class="inner">Total Messages Used: {{mes[i].messagesUsed}} Messages</p>
+                <p class="inner">Total Data Used: {{data[i].dataUsed}} GB</p>
+            </div>
+        </li>
+   </ul>
+</div>

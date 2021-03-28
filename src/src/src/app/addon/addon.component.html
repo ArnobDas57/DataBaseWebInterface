@@ -1,0 +1,29 @@
+<div class="container top-button">
+    <a mat-button class="create-button" (click)="ngOnInit()">Refresh</a>
+</div>
+
+<div class='container'>
+    <ul class="list-group row">
+        <li class="list-group-item col-xs-6" *ngFor="let addon of dataAddons">
+            <div class="col-xs-6">
+                <p class="inner">Feature: {{addon.featureType}}</p>
+                <p class="inner">Amount: {{addon.additionalData}} GB</p>
+                <a (click)="openDialog(addon)" class="inner" mat-button>Change Amount</a>
+            </div>
+        </li>
+        <li class="list-group-item col-xs-6" *ngFor="let addon of minAddons">
+            <div class="col-xs-6">
+                <p class="inner">Feature: {{addon.featureType}}</p>
+                <p class="inner">Amount: {{addon.additionalMinutes}} Minutes</p>
+                <a (click)="openDialog(addon)" class="inner" mat-button>Change Amount</a>
+            </div>
+        </li>
+        <li class="list-group-item col-xs-6" *ngFor="let addon of mesAddons">
+            <div class="col-xs-6">
+                <p class="inner">Feature: {{addon.featureType}}</p>
+                <p class="inner">Amount: {{addon.additionalMessage}} Messages</p>
+                <a (click)="openDialog(addon)" class="inner" mat-button>Change Amount</a>
+            </div>
+        </li>
+   </ul>
+</div>

@@ -1,0 +1,17 @@
+.spacer {
+    flex: 1 1 auto;
+  }
+
+  mat-toolbar-row a {
+    background-color: #5c6bc0;
+    margin: 2px;
+  }
+  
+  .title {
+    font-size: 25px;
+    background-color:#303f9f;
+  }
+  
+  .content {
+    margin: 5px;
+  }

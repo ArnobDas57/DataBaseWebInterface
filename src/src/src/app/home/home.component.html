@@ -1,0 +1,8 @@
+<div class="jumbotron">
+    <h1 class="display-4">Phone Plan Manager</h1>
+    <hr class="my-2">
+    <p class="lead">Welcome to Team NULL's phone plan manager. Authenticated users can login to submit queries and modify data as needed.</p>
+    <hr class="my-2">
+    <button *ngIf="authService.loggedIn()" routerLink="/login" type="button" class="btn btn-dark">Login</button>
+    <button *ngIf="authService.loggedIn()" routerLink="/register" type="button" class="btn btn-primary">Register</button>
+  </div>

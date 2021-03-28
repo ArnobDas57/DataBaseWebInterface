@@ -1,0 +1,31 @@
+<mat-dialog-content>
+    <div>
+        <label>First Name:
+            <input [(ngModel)]="tempData.firstName"/>
+        </label>
+        <label> Last Name:
+            <input [(ngModel)]="tempData.lastName"/>
+        </label>
+        <br>
+        <label>Street:
+            <input [(ngModel)]="tempData.street"/>
+        </label>
+        <br>
+        <label>City:
+            <input [(ngModel)]="tempData.city"/>
+        </label>
+        <br>
+        <label>Zip:
+            <input maxlength="6" [(ngModel)]="tempData.zip"/>
+        </label>
+        <br>
+    </div>
+</mat-dialog-content>
+    
+    <mat-dialog-actions>
+        <button class="mat-raised-button" (click)="save()">Add</button>
+        <span class="example-spacer"></span>
+        <button class="mat-raised-button" (click)="close()">Close</button>
+    </mat-dialog-actions>
+
+    

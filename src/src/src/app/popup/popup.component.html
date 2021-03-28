@@ -1,0 +1,15 @@
+
+<mat-dialog-content>
+<h6>Feature: {{data.featureType}}</h6>
+<label>Amount:
+    <input *ngIf="tempData.featureType.indexOf('data') >= 0" [(ngModel)]="tempData.additionalData"/>
+    <input *ngIf="tempData.featureType.indexOf('min') >= 0" [(ngModel)]="tempData.additionalMinutes"/>
+    <input *ngIf="tempData.featureType.indexOf('mes') >= 0" [(ngModel)]="tempData.additionalMessage"/>
+</label>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button class="mat-raised-button" (click)="save()">Update</button>
+    <span class="example-spacer"></span>
+    <button class="mat-raised-button" (click)="close()">Close</button>
+</mat-dialog-actions>

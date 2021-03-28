@@ -1,0 +1,30 @@
+<div class="container">
+    <hr class="my-2">
+    <form (submit)="usageSearch()">
+        <div class="row">
+            <div class="col">
+                <label>Get Monthly Usage for Specified Customer:</label>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" [(ngModel)]="customer" name="customer" placeholder="Enter Customer ID">
+            </div>
+            <div class="col">
+                <button type="submit" class="btn btn-dark">Search</button>
+            </div>
+        </div>
+    </form>
+    <hr class="my-2">
+  </div>
+
+  <div class='container'>
+    <ul class="list-group row">
+        <li class="list-group-item col-xs-6" *ngFor="let month of months">
+            <div class="col-xs-6">
+                <p class="inner">Customer ID: {{month.customerID}} | Contract Number: {{month.contractNumber}}</p>
+                <p class="inner">Phone Number: {{month.phoneNum}}</p>
+                <p class="inner">Date: {{month.refDate}}</p>
+                <p class="inner">Minutes Used: {{month.minutesUsed}} Minutes | Messages Used: {{month.messagesUsed}} | Data Used: {{month.dataUsed}}</p>
+            </div>
+        </li>
+   </ul>
+</div>

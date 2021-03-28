@@ -1,0 +1,16 @@
+<div class="container top-button">
+    <a mat-button class="create-button" (click)="openDialog()">Add New Customer</a>
+    <a mat-button class="create-button" (click)="ngOnInit()">Refresh</a>
+</div>
+
+<div class='container'>
+    <ul class="list-group row">
+        <li class="list-group-item col-xs-6" *ngFor="let customer of customers">
+            <div class="col-xs-6">
+                <p class="inner">Customer ID: {{customer.customerID}}</p>
+                <p class="inner">Customer Name: {{customer.firstName}} {{customer.lastName}}</p>
+                <p class="inner">Address: {{customer.street}} {{customer.city}} {{customer.zip}}</p>
+            </div>
+        </li>
+   </ul>
+</div>
